@@ -28,31 +28,25 @@ desuden er der også forklaringer til hvilke symboler betyder hvad</p>
 <tr><th> kode </th><th> formel</th><th> forklaring</th><th> Andet</th></tr>
 </thead>
 <tbody>
-<tr><td> setup </td><td></td><td></td><td></td></tr>
-<tr><td> draw </td><td></td><td></td><td></td></tr>
-<tr><td> mousePressed </td><td></td><td></td><td></td></tr>
-<tr><td> keyPressed </td><td></td><td></td><td></td></tr>
-<tr><td> Variabler </td><td></td><td></td><td></td></tr>
-<tr><td> datatyper </td><td></td><td></td><td></td></tr>
+<tr><td> setup </td><td> void setup(){kode}</td><td> det er en funktion der kører en gang, den er basis for at hele koden kan komme i gang, der er ofte her man sætter baggrund of funktioner op</td><td></td></tr>
+<tr><td> draw </td><td> void draw(){kode}</td><td> denne funktion fungerer ligesom setup, men i modsætning til setup, kører den uendeligt, man bruger den ofte til at tegne objekter der skal bevæge sig</td><td></td></tr>
+<tr><td> mousePressed </td><td> mousePressed(){kode}</td><td>denne funktion registrerer om musen bliver tastet på, derefter indsætter man den kode man gerne vil have at den kører når musen bliver klikket på inde i dens curly-brackets</td><td></td></tr>
+<tr><td> keyPressed </td><td> keyPressed(tast){kode}</td><td> denne funktion fungerer ligesom mousePressed, dog er det tasterne på tastaturet der gælder her </td><td></td></tr>
+<tr><td> Variabler </td><td> "datatype" variable = værdi; </td><td> dette danner en variable, som man kan give en værdi der afhænger af datatypen, de kan bruges til lidt for mange ting, deres vigtigste funktion er at indeholde data, som man kan bruge alle steder i koden</td><td> variabler kan både være globale og lokale, de globale dannes udenfor funktioner, oftest som det første stykke kode i en program, mens de lokale dannes inde i funktioner og kan kun bruges derinde</td></tr>
+<tr><td> datatyper </td><td>integer(int), float, String, boolean</td><td> datatyperne bestemmer hvilken egenskab variable skal have fx int bestemmer at variablen skal bestå af hele tal, float bestemmer at den kan bestå af hele tal og decimaltal, string bestemmer at den skal indeholde tekst, boolean danner en variable der enten er "true" eller "false"</td><td></td></tr>
 <tr><td> arrays </td><td></td><td></td><td></td></tr>
-<tr><td> if-statements </td><td></td><td></td><td></td></tr>
-<tr><td> for-loops </td><td></td><td></td><td></td></tr>
-<tr><td> while-loops </td><td></td><td></td><td></td></tr>
-<tr><td> funktioner </td><td></td><td></td><td></td></tr>
-<tr><td> forklaring på klasser </td><td></td><td></td><td></td></tr>
+<tr><td> if-statements </td><td> if(boolean(int/float)){kode}</td><td> dette er en funktion der tester koden for at se om de betingelser der ligger i de runde parenteser er rigtige eller ej, derefter kører den koden i de kryllede parenteser, afhængigt af resultatet af testen</td><td>der hører endnu en funktion til, der gør noget lignende: else(){} den er nøjagtig ligesom if, men den kører noget andet kode hvis betingelserne i if ikke bliver mødt</td></tr>
+<tr><td> for-loops </td><td> for(int/float; test; update){kode}</td><td> denne funktion tester koden ligesom if-funktionen, men denne looper den kode, der ligger inde i de kryllede parenteser, indtil testen melder true/false alt efter hvad man vil have den til at gøre </td><td> </td></tr>
+<tr><td> while-loops </td><td> </td><td> </td><td> </td></tr>
+<tr><td> funktioner </td><td>"returntype" funktion"(){kode}</td><td> dette lader en lave ens egne funktioner, som man kan kalde hvor som helst under den</td><td> </td></tr>
+<tr><td> forklaring på klasser </td><td>class "klasse"(){constructor}, "klasse" = new "klasse";</td><td> klasser bruges til objektorienteret programmering, hvor man inde i de kryllede parenteser kan lave funktioner, figurer, osv.</td><td></td></tr>
 <tr><td> skrive til og hente fra filer </td><td></td><td></td><td></td></tr>
 <tr><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td></td><td></td><td></td></tr>
 </tbody>
 </table>
 
-<h3>Kattis opgaver, kan løses med oop (men ikke altid bedste løsning):</h3>  
-<ul>
-  <li>https://open.kattis.com/problems/pachydermpeanutpacking</li>
-  <li>https://open.kattis.com/problems/semafori</li>
-  <li>https://open.kattis.com/problems/airconditioned</li>
-</ul>    
-  
+<p> PS jeg har problemer med klasser og selvlavede funktioner, hvilket gør det svært at færdiggøre semafori :P </p>
   
 </body>
 </html>
